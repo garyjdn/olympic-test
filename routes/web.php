@@ -15,10 +15,10 @@ use App\Http\Controllers\PageController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 
-Route::get('/no1', [PageController::class, 'no1']);
-Route::get('/no2', [PageController::class, 'no2']);
-Route::get('/no3', [PageController::class, 'no3']);
+Route::get('/no1', [PageController::class, 'no1'])->name('no1');
+Route::get('/no2', [PageController::class, 'no2'])->name('no2');
+Route::get('/no3', [PageController::class, 'no3'])->name('no3');

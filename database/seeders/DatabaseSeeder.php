@@ -18,5 +18,14 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        $this->call([
+            MarMasItemSeeder::class,
+            MarMasMarketplaceSeeder::class,
+            MarMasCustomerSeeder::class,
+            MarMasExpeditionSeeder::class,
+            MarTraOrderSeeder::class,
+            MarTraOrderDetailSeeder::class,
+        ]);
     }
 }
